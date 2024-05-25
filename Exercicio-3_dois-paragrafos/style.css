@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.texto {
+    margin: 40px;
+    padding: 20px;
+
+}
+
+.paragrafo_padrao {
+    background-color: #F5F5F5;
+}
+
+.paragrafo_destacado {
+    background-color: #F0CCE2;
+}
