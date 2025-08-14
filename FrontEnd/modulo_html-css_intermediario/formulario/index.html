@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Facebook</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="formulario">
+                <h1>Facebook</h1>
+                <h2>Criar uma nova conta</h2>
+                <h3>É rápido e fácil</h3>
+                <form action="index.html" method="post" autocomplete="on">
+                    <div class="campo">
+                        <input type="text" name="nome" id="inome" placeholder="Nome" required>
+                        
+                        <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome" required>
+                    </div>
+                    <br>
+                    <div class="campo">
+                        <label for="">Data de nascimento</label><br>
+                        <input type="text" name="dia" id="idia" max="2" list="lstdia" placeholder="Dia" required value="2">
+                        <datalist id="lstdia">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </datalist>
+                        
+                        <input type="text" name="mes" id="imes" list="lstmes" placeholder="Mês" required>
+                        <datalist id="lstmes">
+                            <option>Janeiro</option>
+                            <option>Fevereiro</option>
+                            <option>Março</option>
+                            <option>Abril</option>
+                            <option>Maio</option>
+                            <option>Junho</option>
+                            <option>Julho</option>
+                            <option>Agosto</option>
+                            <option>Setembro</option>
+                            <option>Outubro</option>
+                            <option>Novembro</option>
+                            <option>Dezembro</option>
+                        </datalist>
+                        
+                        <input type="number" name="ano" id="iano" min="1900" max="2025" placeholder="Ano" required>                        
+                    </div>
+                    <br>
+                    <div class="campo">
+                        <label for="">Gênero</label><br>
+                        <input type="radio" name="genero" id="feminino" required><label for="feminino">Feminino</label>
+                        
+                        <input type="radio" name="genero" id="masculino" required><label for="masculino">Masculino</label>
+                        
+                        <input type="radio" name="genero" id="personalizado" required><label for="personalizado">Personalizado</label>
+                    </div>
+                    <br>
+                    <di class="campo">
+                        <input type="text" name="cel-ou-email" id="icel-ou-email" placeholder="Celular ou e-mail" minlength="11" required>
+
+                        <input type="password" name="senha" id="isenha" placeholder="Nova senha" autocomplete="current-password" required minlength="8" maxlength="12">
+                    </di>
+                
+                    <p>As pessoas que usam nosso serviço podem ter carregado suas informações de contato no Facebook. <a href="" target="_blank">Saiba mais.</a></p>
+                    <p>Ao clicar em Cadastre-se, você concorda com nossos <a href="" target="_blank">Termos, Políticas de Privacidade e Política de Cookies</a>. Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+                    <br>
+                    <input type="submit" value="Cadastre-se"><br>
+                    <a href="" target="_blank">Já tem uma conta?</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
