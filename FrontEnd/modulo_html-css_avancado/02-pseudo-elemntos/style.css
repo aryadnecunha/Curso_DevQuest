@@ -1,0 +1,33 @@
+/*seletor::pseudo-elemento {
+    propriedade: valor;
+}*/
+
+.first-letter::first-letter {
+    color: orange;
+}
+
+.first-line::first-line {
+    color: green;
+}
+
+.first-line::first-letter {
+    color: blue;
+}
+
+li::marker {
+    color: red;
+    font-size: 23px;
+}
+
+h2::before {
+    content: "teste ";
+}
+
+h2::after {
+    content: " teste2";
+}
+
+
+
+
+
