@@ -1,0 +1,25 @@
+:root {
+    --cor-padrao: red;
+    --tamanho-fonte-padrão: 20px;
+}
+
+h2{
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-fonte-padrão);
+}
+
+h3{
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-fonte-padrão);
+    background-color: blueviolet;
+}
+
+p{
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-fonte-padrão);
+}
+
+span{
+    color: var(--cor-padrao123, blue);
+    font-size: var(--tamanho-fonte-padrão);
+}
