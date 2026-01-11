@@ -1,0 +1,133 @@
+body {
+    background-color: var(--neutral-dark);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    max-width: 350px;
+    background-color: var(--neutral-medium);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.card .image-link {
+    position: relative;
+    display: flex;
+}
+
+.card .image-link .image {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.card .image-link::before {
+    content: '';
+    background-color: cyan;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.4;
+    display: none;
+}
+
+.card .image-link::after {
+    content: '';
+    background: url(../img/icon-view.svg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.card .image-link:hover::before,
+.card .image-link:hover::after {
+    display: block;
+}
+
+.card .title-link .title {
+    font-size: 22px;
+    color: white;
+    margin: 25px 0 20px;
+}
+
+.card .title-link .title:hover {
+    color: var(--primary-medium);
+}
+
+.card .about {
+    color: var(--primary-soft);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 23px;
+}
+
+.card .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.card .info .price {
+    color: var(--primary-medium);
+    display: flex;
+}
+
+.card .info .price::before {
+    content: '';
+    background-image: url(../img/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 11px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.card .info .day-left {
+    color: var(--primary-soft);
+    display: flex;
+}
+
+.card .info .day-left::before {
+    content: '';
+    background-image: url(../img/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.card .creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--neutral-soft);
+    padding-top: 20px;
+}
+
+.card .creator .avatar {
+    max-width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card .creator .text {
+    color: var(--primary-soft);
+}
+
+.card .creator .text .name {
+    color: white;
+}
+
+.card .creator .text .name:hover {
+    color: var(--primary-medium);
+}
