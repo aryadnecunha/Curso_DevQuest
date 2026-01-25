@@ -1,15 +1,14 @@
 /*
-let selectDeEstado = document.querySelector("select[name='estado']");
+let valorBoleto = 100;
 
-selectDeEstado.addEventListener('change', function(){
-    alert('mudou o select')
-})
-console.log(selectDeEstado)
+console.log(valorBoleto)
+console.log(valorBolet)
 */
 
-document
-    .querySelector("select[name='estado']")
-    .addEventListener('change', function(event){
-         console.log(event.target.value)
-    })
+let inputTelefone = document.getElementById('telefone');
 
+inputTelefone.disabled = true;
+
+function habilitarTelefone() {
+    
+}
